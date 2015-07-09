@@ -8,4 +8,4 @@ beta::
 		exit 1; \
 	fi
 	scp "$(_THEOS_PACKAGE_LAST_FILENAME)" linode:/home/david/repos/beta/debs/.
-	ssh linode "cd /home/david/repos/beta && dpkg-scanpackages . /dev/null | bzip2 > /home/david/repos/beta/Packages.bz2"
+	ssh linode "cd /home/david/repos/beta && dpkg-scanpackages . /dev/null | bzip2 > Packages.bz2"
